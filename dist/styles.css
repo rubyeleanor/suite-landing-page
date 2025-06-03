@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-blue: #172339;
+  --grey: #49566D;
+  --cream: #F3EDE7;
+  --cream-white: #FAF8F6;
+  --purple: #A060FF;
+  --fuschia: #CB30E3;
+  --yellow: #FFA84E;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.375rem;
+  line-height: 2.75rem;
+  letter-spacing: -0.03125rem;
+  color: var(--dark-blue);
+}
+@media screen and (min-width: 80rem) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 4.875rem;
+    letter-spacing: -0.0625rem;
+  }
+}
+
+h2 {
+  font-weight: 400;
+}
+@media screen and (min-width: 80rem) {
+  h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.03125rem;
+  }
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: -0.0125rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.15625rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero p {
+  color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.00625rem;
+}
+
+.quote {
+  font-size: 1.25rem;
+  line-height: 2.1875rem;
+  letter-spacing: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+button {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.btn-lt {
+  background-color: white;
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  width: 11.375rem;
+  height: 3rem;
+}
+@media screen and (min-width: 80rem) {
+  .btn-lt {
+    width: 16rem;
+    height: 3.8125rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+
+.btn-dark {
+  background-color: var(--dark-blue);
+  color: var(--cream-white);
+  font-size: 1.125rem;
+  width: 16rem;
+  height: 3.8125rem;
+  line-height: 2rem;
+}
+
+body {
+  margin: auto;
+  max-width: 23.4375rem;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 16px 56px;
+}
+
+.hero {
+  margin: 0 16px;
+}
+
+.hero-main {
+  height: 20.3125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.phone-img {
+  width: 21.4375rem;
+  height: 15rem;
+  border-radius: 15px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  background-image: url("../../assets/image-hero-landscape@2x.png");
+  background-size: cover;
+}
+
+.stats-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.stat:last-of-type {
+  margin-bottom: 0;
+}/*# sourceMappingURL=styles.css.map */

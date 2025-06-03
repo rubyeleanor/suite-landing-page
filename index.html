@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Suite landing page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <title>Frontend Mentor | Suite landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href=""><img src="./assets/logo.svg" alt="" /></a
+        ><button class="btn-lt">Request Beta Access</button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-main">
+          <h1>
+            A <span class="bold">super solution</span> for your
+            <span class="bold">business.</span>
+          </h1>
+          <p>
+            Our marketing and sales automations help you scale your outreach to
+            get more leads for your company.
+          </p>
+          <button class="btn-dark">Request Beta Access</button>
+        </div>
 
-  Request Beta Access
+        <div class="phone-img"></div>
 
-  A super solution for your business.
+        <div class="stats-cont">
+          <div class="stat">
+            <h2 class="bold">2K+</h2>
+            <p>Companies</p>
+          </div>
+          <div class="stat">
+            <h2 class="bold">8</h2>
+            <p>Languages</p>
+          </div>
+          <div class="stat">
+            <h2 class="bold">1.2M</h2>
+            <p>Leads</p>
+          </div>
+        </div>
+      </section>
 
-  Our marketing and sales automations help you scale your outreach to 
-  get more leads for your company. 
-
-  Request Beta Access
-
-  2K+
-  Companies
-
-  8
-  Languages
-
-  1.2M
-  Leads
-
-  It just works.
-
-  “I really like how it is an all-in-one solution that handle many of 
-  the tasks that you would normally need separate tools to do the same 
-  job. This thing is a miracle worker.”
-
-  Jeremy Robinson
-  CMO, Fylo
-
-  Copyright - Suite
-
-</body>
+      <div class="testimonial">
+        <h2>It just <span class="bold">works.</span></h2>
+        <p class="quote">
+          “I really like how it is an all-in-one solution that handle many of
+          the tasks that you would normally need separate tools to do the same
+          job. This thing is a miracle worker.”
+        </p>
+        <h3>Jeremy Robinson</h3>
+        <h4>CMO, Fylo</h4>
+      </div>
+    </main>
+    <footer>Copyright - Suite</footer>
+  </body>
 </html>

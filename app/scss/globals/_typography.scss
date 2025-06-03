@@ -1,0 +1,120 @@
+@use "sass:math";
+
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + rem;
+  } @else {
+    @error 'Don\'t use units when using the rem() function; only numbers.';
+  }
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: rem(38);
+  line-height: rem(44);
+  letter-spacing: rem(-0.5);
+  color: var(--dark-blue);
+
+  @media screen and (min-width: 80rem) {
+    font-size: rem(72);
+    line-height: rem(78);
+    letter-spacing: rem(-1);
+  }
+}
+
+//might have to change h2 bc of mobile layout sizes
+h2 {
+  font-weight: 400;
+
+  @media screen and (min-width: 80rem) {
+    font-size: rem(48);
+    line-height: rem(56);
+    letter-spacing: rem(-0.5);
+  }
+}
+
+h3 {
+  font-size: rem(18);
+  line-height: rem(32);
+  letter-spacing: rem(-0.2);
+  text-transform: uppercase;
+}
+h4 {
+  font-size: rem(16);
+  line-height: rem(26);
+  letter-spacing: rem(2.5);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero p {
+  color: var(--grey);
+  font-size: rem(16);
+  line-height: rem(28);
+  letter-spacing: rem(0.1);
+}
+
+.quote {
+  font-size: rem(20);
+  line-height: rem(35);
+  letter-spacing: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+//buttons
+
+button {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.btn-lt {
+  background-color: white;
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  width: rem(182);
+  height: rem(48);
+
+  @media screen and (min-width: 80rem) {
+    width: rem(256);
+    height: rem(61);
+    font-size: rem(18);
+    line-height: rem(32);
+  }
+}
+
+.btn-dark {
+  background-color: var(--dark-blue);
+  color: var(--cream-white);
+  font-size: rem(18);
+  width: rem(256);
+  height: rem(61);
+  line-height: rem(32);
+}
