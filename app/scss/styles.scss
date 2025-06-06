@@ -33,6 +33,18 @@ header nav {
   justify-content: space-between;
 }
 
+.curve1 {
+  width: 40%;
+  margin-right: 45px;
+  margin-bottom: 10px;
+}
+
+.curve-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .phone-img {
   width: rem(343);
   height: rem(240);
@@ -47,6 +59,7 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 56px;
 }
 
 .stat {
@@ -56,4 +69,72 @@ header nav {
 
 .stat:last-of-type {
   margin-bottom: 0;
+}
+
+.testimonial {
+  position: relative;
+  height: rem(930);
+}
+
+.t-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+}
+
+.t-text {
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+  padding-top: 360px;
+  padding-bottom: 64px;
+  position: absolute;
+  top: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.jeremy {
+  width: 252px;
+  background-image: url("../../assets/pattern-blur.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.curve2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: var(--cream);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 81px;
+  height: 32px;
+}
+
+.soc-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tw {
+  margin-left: 28px;
+  margin-right: 28px;
 }

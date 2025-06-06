@@ -19,7 +19,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -38,9 +39,10 @@ h1 {
   }
 }
 
-//might have to change h2 bc of mobile layout sizes
 h2 {
   font-weight: 400;
+  font-size: rem(48);
+  line-height: rem(56);
 
   @media screen and (min-width: 80rem) {
     font-size: rem(48);
@@ -50,17 +52,28 @@ h2 {
 }
 
 h3 {
+  font-size: rem(40);
+  line-height: rem(48);
+  letter-spacing: rem(-0.4);
+  font-weight: 400;
+  color: var(--cream-white);
+}
+
+h4 {
   font-size: rem(18);
   line-height: rem(32);
   letter-spacing: rem(-0.2);
   text-transform: uppercase;
+  color: var(--cream-white);
 }
-h4 {
+
+h5 {
   font-size: rem(16);
   line-height: rem(26);
   letter-spacing: rem(2.5);
   text-transform: uppercase;
   font-weight: 400;
+  color: var(--cream-white);
 }
 
 p {
@@ -75,10 +88,25 @@ p {
   letter-spacing: rem(0.1);
 }
 
+.stat p {
+  text-transform: uppercase;
+  letter-spacing: rem(2.5);
+}
+
 .quote {
-  font-size: rem(20);
-  line-height: rem(35);
-  letter-spacing: 0;
+  font-size: rem(18);
+  line-height: rem(32);
+  letter-spacing: rem(0.1);
+  color: var(--cream);
+  margin: 40px 16px;
+}
+
+.copyright {
+  color: var(--grey);
+  font-size: rem(15);
+  line-height: rem(32);
+  margin-top: 33px;
+  margin-bottom: 33px;
 }
 
 a,
@@ -110,11 +138,24 @@ button {
   }
 }
 
-.btn-dark {
+.btn-lt:hover {
   background-color: var(--dark-blue);
+  color: var(--cream-white);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background: var(--dark-blue);
   color: var(--cream-white);
   font-size: rem(18);
   width: rem(256);
   height: rem(61);
   line-height: rem(32);
+}
+
+.btn-dark:hover {
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(170deg, var(--fuschia) 50%, var(--yellow));
 }
