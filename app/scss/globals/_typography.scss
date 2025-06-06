@@ -32,6 +32,12 @@ h1 {
   letter-spacing: rem(-0.5);
   color: var(--dark-blue);
 
+  @media screen and (min-width: 48rem) {
+    font-size: rem(56);
+    line-height: rem(64);
+    letter-spacing: rem(-0.8);
+  }
+
   @media screen and (min-width: 80rem) {
     font-size: rem(72);
     line-height: rem(78);
@@ -43,12 +49,7 @@ h2 {
   font-weight: 400;
   font-size: rem(48);
   line-height: rem(56);
-
-  @media screen and (min-width: 80rem) {
-    font-size: rem(48);
-    line-height: rem(56);
-    letter-spacing: rem(-0.5);
-  }
+  letter-spacing: rem(-0.5);
 }
 
 h3 {
@@ -88,6 +89,12 @@ p {
   letter-spacing: rem(0.1);
 }
 
+.hero-text {
+  @media screen and (min-width: 48rem) {
+    padding-right: 140px;
+  }
+}
+
 .stat p {
   text-transform: uppercase;
   letter-spacing: rem(2.5);
@@ -99,6 +106,10 @@ p {
   letter-spacing: rem(0.1);
   color: var(--cream);
   margin: 40px 16px;
+
+  @media screen and (min-width: 48rem) {
+    padding: 0 60px;
+  }
 }
 
 .copyright {
@@ -129,6 +140,16 @@ button {
   color: var(--dark-blue);
   width: rem(182);
   height: rem(48);
+  font-size: rem(14);
+  line-height: rem(24);
+  letter-spacing: rem(-0.15);
+
+  @media screen and (min-width: 48rem) {
+    width: rem(219);
+    height: rem(56);
+    font-size: rem(16);
+    line-height: rem(32);
+  }
 
   @media screen and (min-width: 80rem) {
     width: rem(256);

@@ -12,6 +12,10 @@
 body {
   margin: auto;
   max-width: rem(375);
+
+  @media screen and (min-width: 48rem) {
+    max-width: rem(768);
+  }
 }
 
 header nav {
@@ -19,11 +23,30 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 16px 56px;
+  padding: 24px 16px 56px;
+
+  @media screen and (min-width: 48rem) {
+    padding: 40px 40px 80px;
+  }
 }
 
 .hero {
   margin: 0 16px;
+
+  @media screen and (min-width: 48rem) {
+    margin: 0;
+  }
+}
+
+.hero-cont {
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: rem(482);
+    margin: 0 40px 88px;
+    margin-bottom: 88px;
+  }
 }
 
 .hero-main {
@@ -31,12 +54,22 @@ header nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (min-width: 48rem) {
+    width: rem(500);
+    height: rem(400);
+  }
 }
 
 .curve1 {
   width: 40%;
   margin-right: 45px;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 48rem) {
+    width: 45%;
+    margin-bottom: 16px;
+  }
 }
 
 .curve-cont {
@@ -53,6 +86,16 @@ header nav {
   margin-bottom: 56px;
   background-image: url("../../assets/image-hero-landscape@2x.png");
   background-size: cover;
+
+  @media screen and (min-width: 48rem) {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    z-index: -1;
+    width: rem(281);
+    height: rem(482);
+    background-image: url("../../assets/image-hero-portrait@2x.png");
+  }
 }
 
 .stats-cont {
@@ -60,11 +103,20 @@ header nav {
   flex-direction: column;
   align-items: center;
   margin-bottom: 56px;
+  @media screen and (min-width: 48rem) {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 40px 90px;
+  }
 }
 
 .stat {
   margin-bottom: rem(32);
   text-align: center;
+
+  @media screen and (min-width: 48rem) {
+    margin-bottom: 0;
+  }
 }
 
 .stat:last-of-type {
@@ -74,6 +126,11 @@ header nav {
 .testimonial {
   position: relative;
   height: rem(930);
+
+  @media screen and (min-width: 48rem) {
+    height: rem(400); //change height to change overlap of footer
+    margin: 0 40px;
+  }
 }
 
 .t-images {
@@ -121,6 +178,11 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 48rem) {
+    flex-direction: row;
+    padding: 535px 40px 72px;
+  }
 }
 
 .footer-logo {

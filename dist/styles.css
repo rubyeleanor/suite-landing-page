@@ -48,6 +48,13 @@ h1 {
   letter-spacing: -0.03125rem;
   color: var(--dark-blue);
 }
+@media screen and (min-width: 48rem) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.05rem;
+  }
+}
 @media screen and (min-width: 80rem) {
   h1 {
     font-size: 4.5rem;
@@ -60,13 +67,7 @@ h2 {
   font-weight: 400;
   font-size: 3rem;
   line-height: 3.5rem;
-}
-@media screen and (min-width: 80rem) {
-  h2 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    letter-spacing: -0.03125rem;
-  }
+  letter-spacing: -0.03125rem;
 }
 
 h3 {
@@ -106,6 +107,12 @@ p {
   letter-spacing: 0.00625rem;
 }
 
+@media screen and (min-width: 48rem) {
+  .hero-text {
+    padding-right: 140px;
+  }
+}
+
 .stat p {
   text-transform: uppercase;
   letter-spacing: 0.15625rem;
@@ -117,6 +124,11 @@ p {
   letter-spacing: 0.00625rem;
   color: var(--cream);
   margin: 40px 16px;
+}
+@media screen and (min-width: 48rem) {
+  .quote {
+    padding: 0 60px;
+  }
 }
 
 .copyright {
@@ -145,6 +157,17 @@ button {
   color: var(--dark-blue);
   width: 11.375rem;
   height: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.009375rem;
+}
+@media screen and (min-width: 48rem) {
+  .btn-lt {
+    width: 13.6875rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 }
 @media screen and (min-width: 80rem) {
   .btn-lt {
@@ -181,17 +204,43 @@ body {
   margin: auto;
   max-width: 23.4375rem;
 }
+@media screen and (min-width: 48rem) {
+  body {
+    max-width: 48rem;
+  }
+}
 
 header nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 16px 56px;
+  padding: 24px 16px 56px;
+}
+@media screen and (min-width: 48rem) {
+  header nav {
+    padding: 40px 40px 80px;
+  }
 }
 
 .hero {
   margin: 0 16px;
+}
+@media screen and (min-width: 48rem) {
+  .hero {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .hero-cont {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30.125rem;
+    margin: 0 40px 88px;
+    margin-bottom: 88px;
+  }
 }
 
 .hero-main {
@@ -200,11 +249,23 @@ header nav {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (min-width: 48rem) {
+  .hero-main {
+    width: 31.25rem;
+    height: 25rem;
+  }
+}
 
 .curve1 {
   width: 40%;
   margin-right: 45px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 48rem) {
+  .curve1 {
+    width: 45%;
+    margin-bottom: 16px;
+  }
 }
 
 .curve-cont {
@@ -222,6 +283,17 @@ header nav {
   background-image: url("../../assets/image-hero-landscape@2x.png");
   background-size: cover;
 }
+@media screen and (min-width: 48rem) {
+  .phone-img {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    z-index: -1;
+    width: 17.5625rem;
+    height: 30.125rem;
+    background-image: url("../../assets/image-hero-portrait@2x.png");
+  }
+}
 
 .stats-cont {
   display: flex;
@@ -229,10 +301,22 @@ header nav {
   align-items: center;
   margin-bottom: 56px;
 }
+@media screen and (min-width: 48rem) {
+  .stats-cont {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 40px 90px;
+  }
+}
 
 .stat {
   margin-bottom: 2rem;
   text-align: center;
+}
+@media screen and (min-width: 48rem) {
+  .stat {
+    margin-bottom: 0;
+  }
 }
 
 .stat:last-of-type {
@@ -242,6 +326,12 @@ header nav {
 .testimonial {
   position: relative;
   height: 58.125rem;
+}
+@media screen and (min-width: 48rem) {
+  .testimonial {
+    height: 25rem;
+    margin: 0 40px;
+  }
 }
 
 .t-images {
@@ -289,6 +379,12 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 48rem) {
+  footer {
+    flex-direction: row;
+    padding: 535px 40px 72px;
+  }
 }
 
 .footer-logo {
