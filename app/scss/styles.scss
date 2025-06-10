@@ -16,6 +16,10 @@ body {
   @media screen and (min-width: 48rem) {
     max-width: rem(768);
   }
+
+  @media screen and (min-width: 90rem) {
+    max-width: rem(1440);
+  }
 }
 
 header nav {
@@ -24,17 +28,29 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding: 24px 16px 56px;
-
   @media screen and (min-width: 48rem) {
     padding: 40px 40px 80px;
+  }
+
+  @media screen and (min-width: 90rem) {
+    padding: 50px 165px 67px;
   }
 }
 
 .hero {
-  margin: 0 16px;
+  margin: 0 16px 56px;
 
   @media screen and (min-width: 48rem) {
-    margin: 0;
+    margin: 0 0 90px;
+  }
+
+  @media screen and (min-width: 90rem) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: rem(1440);
+    height: rem(600);
+    padding: 0 165px;
   }
 }
 
@@ -45,7 +61,11 @@ header nav {
     position: relative;
     height: rem(482);
     margin: 0 40px 88px;
-    margin-bottom: 88px;
+  }
+
+  @media screen and (min-width: 90rem) {
+    margin: 0;
+    height: rem(600);
   }
 }
 
@@ -58,6 +78,11 @@ header nav {
   @media screen and (min-width: 48rem) {
     width: rem(500);
     height: rem(400);
+  }
+
+  @media screen and (min-width: 90rem) {
+    width: rem(635);
+    height: rem(458);
   }
 }
 
@@ -96,17 +121,31 @@ header nav {
     height: rem(482);
     background-image: url("../../assets/image-hero-portrait@2x.png");
   }
+
+  @media screen and (min-width: 90rem) {
+    width: rem(350);
+    height: rem(600);
+    left: 474px;
+  }
 }
 
 .stats-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 56px;
+
   @media screen and (min-width: 48rem) {
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 40px 90px;
+    margin: 0 40px;
+  }
+
+  @media screen and (min-width: 90rem) {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 105px 60px;
   }
 }
 
@@ -116,6 +155,10 @@ header nav {
 
   @media screen and (min-width: 48rem) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 90rem) {
+    text-align: left;
   }
 }
 
@@ -131,6 +174,11 @@ header nav {
     height: rem(400); //change height to change overlap of footer
     margin: 0 40px;
   }
+
+  @media screen and (min-width: 90rem) {
+    margin: 0 167px;
+    height: rem(450);
+  }
 }
 
 .t-images {
@@ -142,6 +190,13 @@ header nav {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 10;
+
+  @media screen and (min-width: 90rem) {
+    flex-direction: row;
+    left: 25%;
+    bottom: -419px;
+    padding-left: 100px;
+  }
 }
 
 .t-text {
@@ -155,6 +210,11 @@ header nav {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+
+  @media screen and (min-width: 90rem) {
+    text-align: left;
+    padding: 88px 120px 88px 634px;
+  }
 }
 
 .jeremy {
@@ -163,11 +223,19 @@ header nav {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media screen and (min-width: 90rem) {
+    width: 360px;
+  }
 }
 
 .curve2 {
   margin-top: 40px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 90rem) {
+    margin: 0 0 100px 35px;
+  }
 }
 
 footer {
@@ -182,6 +250,10 @@ footer {
   @media screen and (min-width: 48rem) {
     flex-direction: row;
     padding: 535px 40px 72px;
+  }
+
+  @media screen and (min-width: 90rem) {
+    padding: 360px 167px 72px;
   }
 }
 

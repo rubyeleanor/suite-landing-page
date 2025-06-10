@@ -55,7 +55,7 @@ h1 {
     letter-spacing: -0.05rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 90rem) {
   h1 {
     font-size: 4.5rem;
     line-height: 4.875rem;
@@ -76,6 +76,12 @@ h3 {
   letter-spacing: -0.025rem;
   font-weight: 400;
   color: var(--cream-white);
+}
+@media screen and (min-width: 90rem) {
+  h3 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }
 
 h4 {
@@ -106,10 +112,21 @@ p {
   line-height: 1.75rem;
   letter-spacing: 0.00625rem;
 }
+@media screen and (min-width: 90rem) {
+  .hero p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
 
 @media screen and (min-width: 48rem) {
   .hero-text {
     padding-right: 140px;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .hero-text {
+    padding-right: 300px;
   }
 }
 
@@ -128,6 +145,14 @@ p {
 @media screen and (min-width: 48rem) {
   .quote {
     padding: 0 60px;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .quote {
+    font-size: 1.25rem;
+    line-height: 2.1875rem;
+    padding: 0;
+    margin: 40px 0;
   }
 }
 
@@ -169,14 +194,6 @@ button {
     line-height: 2rem;
   }
 }
-@media screen and (min-width: 80rem) {
-  .btn-lt {
-    width: 16rem;
-    height: 3.8125rem;
-    font-size: 1.125rem;
-    line-height: 2rem;
-  }
-}
 
 .btn-lt:hover {
   background-color: var(--dark-blue);
@@ -209,6 +226,11 @@ body {
     max-width: 48rem;
   }
 }
+@media screen and (min-width: 90rem) {
+  body {
+    max-width: 90rem;
+  }
+}
 
 header nav {
   width: 100%;
@@ -222,13 +244,28 @@ header nav {
     padding: 40px 40px 80px;
   }
 }
+@media screen and (min-width: 90rem) {
+  header nav {
+    padding: 50px 165px 67px;
+  }
+}
 
 .hero {
-  margin: 0 16px;
+  margin: 0 16px 56px;
 }
 @media screen and (min-width: 48rem) {
   .hero {
-    margin: 0;
+    margin: 0 0 90px;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90rem;
+    height: 37.5rem;
+    padding: 0 165px;
   }
 }
 
@@ -239,7 +276,12 @@ header nav {
     position: relative;
     height: 30.125rem;
     margin: 0 40px 88px;
-    margin-bottom: 88px;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .hero-cont {
+    margin: 0;
+    height: 37.5rem;
   }
 }
 
@@ -253,6 +295,12 @@ header nav {
   .hero-main {
     width: 31.25rem;
     height: 25rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .hero-main {
+    width: 39.6875rem;
+    height: 28.625rem;
   }
 }
 
@@ -294,18 +342,33 @@ header nav {
     background-image: url("../../assets/image-hero-portrait@2x.png");
   }
 }
+@media screen and (min-width: 90rem) {
+  .phone-img {
+    width: 21.875rem;
+    height: 37.5rem;
+    left: 474px;
+  }
+}
 
 .stats-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 56px;
 }
 @media screen and (min-width: 48rem) {
   .stats-cont {
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 40px 90px;
+    margin: 0 40px;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .stats-cont {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 105px 60px;
   }
 }
 
@@ -316,6 +379,11 @@ header nav {
 @media screen and (min-width: 48rem) {
   .stat {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .stat {
+    text-align: left;
   }
 }
 
@@ -333,6 +401,12 @@ header nav {
     margin: 0 40px;
   }
 }
+@media screen and (min-width: 90rem) {
+  .testimonial {
+    margin: 0 167px;
+    height: 28.125rem;
+  }
+}
 
 .t-images {
   display: flex;
@@ -343,6 +417,14 @@ header nav {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 10;
+}
+@media screen and (min-width: 90rem) {
+  .t-images {
+    flex-direction: row;
+    left: 25%;
+    bottom: -419px;
+    padding-left: 100px;
+  }
 }
 
 .t-text {
@@ -357,6 +439,12 @@ header nav {
   justify-content: space-between;
   text-align: center;
 }
+@media screen and (min-width: 90rem) {
+  .t-text {
+    text-align: left;
+    padding: 88px 120px 88px 634px;
+  }
+}
 
 .jeremy {
   width: 252px;
@@ -365,10 +453,20 @@ header nav {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+@media screen and (min-width: 90rem) {
+  .jeremy {
+    width: 360px;
+  }
+}
 
 .curve2 {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 90rem) {
+  .curve2 {
+    margin: 0 0 100px 35px;
+  }
 }
 
 footer {
@@ -384,6 +482,11 @@ footer {
   footer {
     flex-direction: row;
     padding: 535px 40px 72px;
+  }
+}
+@media screen and (min-width: 90rem) {
+  footer {
+    padding: 360px 167px 72px;
   }
 }
 
